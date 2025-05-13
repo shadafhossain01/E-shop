@@ -6,18 +6,21 @@ import BlogPage from './pages/BlogPage';
 import CartPage from './pages/CartPage';
 import CheckoutPage from './pages/CheckoutPage';
 import ContactPage from './pages/ContactPage';
+import Common from "./components/commonLayout/Common"
 
 const App = () => {
   return (
-<Routes>
- <Route path="/" element={<HomePage/>} />
- <Route path="/product" element={<ProductPage/>} />
- <Route path="/blog" element={<BlogPage/>} />
- <Route path="/cart" element={<CartPage/>} />
- <Route path="/checkout" element={<CheckoutPage/>} />
- <Route path="/contact" element={<ContactPage/>} />
-</Routes>
-  )
+    <Routes>
+      <Route element={<Common/>}>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/product" element={<ProductPage />} />
+        <Route path="/blog" element={<BlogPage />} />
+        <Route path="/cart" element={<CartPage />} />
+        <Route path="/checkout" element={<CheckoutPage />} />
+        <Route path="/contact" element={<ContactPage />} />
+      </Route>
+    </Routes>
+  );
 }
 
 export default App
