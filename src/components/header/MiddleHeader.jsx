@@ -7,7 +7,7 @@ import UserIcon from "../../svg/UserIcon"
 const MiddleHeader = () => {
   return (
     <Container>
-      <div className="flex justify-between pt-9 pb-8">
+      <div className="flex justify-between pt-9 pb-8 items-center">
         <img src="images/logo.png" className="h-[40px]" />
         <div className="flex items-center justify-between">
           {/* Input Box */}
