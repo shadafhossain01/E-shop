@@ -3,12 +3,15 @@ import Container from "../commonLayout/Container"
 import { CiSearch } from "react-icons/ci";
 import  Cart from "../../svg/Cart"
 import UserIcon from "../../svg/UserIcon"
+import { Link } from "react-router-dom";
 
 const MiddleHeader = () => {
   return (
     <Container>
       <div className="flex justify-between pt-9 pb-8 items-center">
-        <img src="images/logo.png" className="h-[40px]" />
+        <Link to={"/"}>
+          <img src="images/logo.png" className="h-[40px]" />
+        </Link>
         <div className="flex items-center justify-between">
           {/* Input Box */}
           <div className="relative flex items-center mr-12">

@@ -13,7 +13,7 @@ const TopFooter = () => {
               " linear-gradient(90deg,rgba(244, 244, 244, 1) 10%, rgba(217, 217, 217, 1) 52%)",
           }}
         >
-          <h2 className="font-semibold font-[Montserrat]  text-4xl leading-[46px]">
+          <h2 className="font-semibold font-[Poppins]  text-4xl leading-[46px]">
             Get Our Updates
           </h2>
           <p className="mt-4 mb-8 max-w-[490px] font-[Montserrat] text-xl leading-[30px] ">
@@ -26,7 +26,7 @@ const TopFooter = () => {
             className="font-[Montserrat] w-[494px] bg-white p-6 rounded-[10px] mb-4 text-base"
           />
           <div>
-            <Button text={"Subscribe"}/>
+            <Button text={"Subscribe"} />
           </div>
         </div>
       </Container>

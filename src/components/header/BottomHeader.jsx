@@ -20,7 +20,7 @@ const BottomHeader = () => {
             </li>
             <li>
               <Link
-                to={""}
+                to={"/product"}
                 className="flex items-center gap-4 font-bold text-white text-base font-[Montserrat]"
               >
                 <IoIosArrowDown />
@@ -29,7 +29,7 @@ const BottomHeader = () => {
             </li>
             <li>
               <Link
-                to={""}
+                to={"/blog"}
                 className="font-bold text-white text-base font-[Montserrat]"
               >
                 Blog
@@ -37,7 +37,7 @@ const BottomHeader = () => {
             </li>
             <li>
               <Link
-                to={""}
+                to={"/contact"}
                 className="font-bold text-white text-base font-[Montserrat]"
               >
                 Contact
