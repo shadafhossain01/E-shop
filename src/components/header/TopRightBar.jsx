@@ -7,7 +7,27 @@ import { FaInstagram } from "react-icons/fa";
 import {Link} from "react-router-dom"
 
 const TopRightBar = () => {
-  const Currency = ["USD", "BDT", "Real", "Euro", "Riel"];
+  const Currency = [
+    "USD",
+    "BDT",
+    "INR",
+    "PKR",
+    "SAR",
+    "OMR",
+    "QAR",
+    "AED",
+    "EUR",
+    "GBP",
+    "CNY",
+    "JPY",
+    "MYR",
+    "NPR",
+    "AFN",
+    "KWD",
+    "BHD",
+    "Riel",
+  ];
+
   const [selectCurrency,setSelectCurrency]=useState(null)
 
   return (
@@ -16,14 +36,14 @@ const TopRightBar = () => {
         <select
           name="currency"
           value={selectCurrency || ""}
-          className="font-[Montserrat] text-sm"
+          className="font-['Montserrat'] text-sm cursor-pointer"
           onChange={(e) => {
             const newCurrency = Currency.find((c) => c == e.target.value);
             setSelectCurrency(newCurrency);
           }}
         >
           {Currency.map((curr) => (
-            <option value={curr}>{curr}</option>
+            <option className="font-['Montserrat'] cursor-pointer" key={curr} value={curr}>{curr}</option>
           ))}
         </select>
       </div>

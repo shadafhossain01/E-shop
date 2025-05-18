@@ -56,7 +56,7 @@ setIsOpen(false)
       </select>
 
       <div
-        className="cursor-pointer w-[160px] flex items-center font-[Montserrat] text-sm"
+        className="cursor-pointer w-[160px] flex items-center font-['Montserrat'] text-sm"
         onClick={handleOpen}
       >
         {selectCountry ? (
@@ -67,18 +67,18 @@ setIsOpen(false)
           </>
         ) : (
           <p className="flex items-center gap-3">
-            Select Country <IoIosArrowDown />{" "}
+            Select Country <IoIosArrowDown />
           </p>
         )}
       </div>
 
       {isOpen && (
-        <ul className="bg-white shadow-lg border-gray-300 z-10 absolute w-[160px]">
+        <ul className="bg-white shadow-lg border-gray-300 z-10 absolute w-[160px]" >
           {countries.map((country, index) => (
             <li
               onClick={() => handleSetCountry(country)}
               key={index}
-              className="flex items-center gap-2 p-2 hover:bg-gray-200 cursor-pointer font-[Montserrat]"
+              className="flex items-center gap-2 p-2 hover:bg-gray-200 cursor-pointer font-['Montserrat']"
             >
               <img src={country?.flag} className="w-5 h-4 mr-2" />
               {country.name}
