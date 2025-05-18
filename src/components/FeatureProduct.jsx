@@ -40,34 +40,35 @@ const FeatureProduct = () => {
   return (
     <div className="mb-[80px]">
       <Container>
+        <h2 className="font-['Poppins'] font-semibold text-[36px] leading-[46px] mb-[48px]">Featured Products</h2>
         <Slider {...settings}>
           <ProductLayout
             price="1000"
             reviewnumber="500"
             title="S21 Laptop Ultra HD LED Screen Feature 2023 ..."
             category="LAPTOp"
-            starCount='4'
+            starCount="4"
           />
           <ProductLayout
             price="1000"
             reviewnumber="500"
             title="S21 Laptop Ultra HD LED Screen Feature 2023 ..."
             category="LAPTOp"
-            starCount='4'
+            starCount="4"
           />
           <ProductLayout
             price="1000"
             reviewnumber="500"
             title="S21 Laptop Ultra HD LED Screen Feature 2023 ..."
             category="LAPTOp"
-            starCount='4'
+            starCount="4"
           />
           <ProductLayout
             price="1000"
             reviewnumber="500"
             title="S21 Laptop Ultra HD LED Screen Feature 2023 ..."
             category="Pc"
-            starCount='3'
+            starCount="3"
             showDiscount={true}
             discountRetangle={false}
             discountCircle={true}
@@ -77,7 +78,7 @@ const FeatureProduct = () => {
             reviewnumber="500"
             title="S21 Laptop Ultra HD LED Screen Feature 2023 ..."
             category="LAPTOp"
-            starCount='1'
+            starCount="1"
           />
         </Slider>
       </Container>
