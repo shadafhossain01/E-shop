@@ -18,7 +18,7 @@ const ProductLayout = ({
    const [star, setStar] = useState(new Array(+starCount).fill(starCount));
 
   return (
-    <div className="border border-white hover:border-[#CBCBCB] rounded-[10px] group">
+    <div className="border border-white hover:border-[#CBCBCB] rounded-[10px] group cursor-pointer">
       <div className="p-6 relative">
         <img src="images/productImg.png" className="w-full" />
         {showDiscount &&
