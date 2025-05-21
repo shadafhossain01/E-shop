@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { CiHeart } from "react-icons/ci";
 import { FaStar } from "react-icons/fa";
 import { IoCartOutline, IoShareSocialOutline } from "react-icons/io5";
@@ -12,23 +12,25 @@ const ProductLayout = ({
   starCount,
   showDiscount =false,
   discountRetangle,
-  discountCircle
+  discountCircle,
+  img,
+  percentage="20%"
 }) => {
 
    const [star, setStar] = useState(new Array(+starCount).fill(starCount));
 
   return (
-    <div className="border border-white hover:border-[#CBCBCB] rounded-[10px] group cursor-pointer">
+    <div className="border border-white hover:border-[#CBCBCB] rounded-[10px] group cursor-pointer max-w-[285px]">
       <div className="p-6 relative">
-        <img src="images/productImg.png" className="w-full" />
+        <img src={img} className="w-full" />
         {showDiscount &&
           (discountRetangle ? (
             <h5 className="font-['Montserrat'] text-base text-white font-bold bg-[#FF624C] px-[20px] py-[6px] rounded-[5px] absolute right-[15px] top-[10px]">
-              20%
+              {percentage}
             </h5>
           ) : discountCircle ? (
             <h5 className="font-['Montserrat'] text-base text-white font-bold bg-[#FF624C] w-[60px] h-[60px] flex justify-center items-center rounded-full absolute right-[15px] top-[10px]">
-              20%
+              {percentage}
             </h5>
           ) : null)}
 
